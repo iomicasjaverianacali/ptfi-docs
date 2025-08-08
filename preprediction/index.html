@@ -16,15 +16,15 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
     
     
       
-        <title>Pre-prediction - WearMe</title>
+        <title>Pre-prediction - PTFI</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.2afb09e1.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e37652d.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
@@ -109,7 +109,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="WearMe" class="md-header__button md-logo" aria-label="WearMe" data-md-component="logo">
+    <a href=".." title="PTFI" class="md-header__button md-logo" aria-label="PTFI" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -123,7 +123,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            WearMe
+            PTFI
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -365,13 +365,13 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="WearMe" class="md-nav__button md-logo" aria-label="WearMe" data-md-component="logo">
+    <a href=".." title="PTFI" class="md-nav__button md-logo" aria-label="PTFI" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    WearMe
+    PTFI
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -1586,8 +1586,8 @@
 <span class="normal"><a href="#__codelineno-0-409">409</a></span>
 <span class="normal"><a href="#__codelineno-0-410">410</a></span>
 <span class="normal"><a href="#__codelineno-0-411">411</a></span>
-<span class="normal"><a href="#__codelineno-0-412">412</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="k">class</span> <span class="nc">PrePredictWorkflow</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">):</span>
+<span class="normal"><a href="#__codelineno-0-412">412</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="k">class</span><span class="w"> </span><span class="nc">PrePredictWorkflow</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">):</span>
 </span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="sd">        Initializes the pyOpenMS experiment with the .mzML file provided.</span>
 </span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10"></a>
@@ -1597,7 +1597,7 @@
 </span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">exp_filename</span> <span class="o">=</span> <span class="n">filename</span>
 </span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">handle_to_exp</span> <span class="o">=</span> <span class="n">oms</span><span class="o">.</span><span class="n">MSExperiment</span><span class="p">()</span>
 </span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16"></a>        <span class="n">oms</span><span class="o">.</span><span class="n">MzMLFile</span><span class="p">()</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">handle_to_exp</span><span class="p">)</span>
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17"></a>    <span class="k">def</span> <span class="nf">get_spectrum</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">rt_idx</span><span class="p">):</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">get_spectrum</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">rt_idx</span><span class="p">):</span>
 </span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19"></a><span class="sd">        Wrapper to the pyOpenMS method. Obtains the mass spectrum corresponding to the given retention time index `rt_idx`.</span>
 </span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20"></a>
@@ -1615,7 +1615,7 @@
 </span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32"></a>        <span class="n">mz</span><span class="p">,</span> <span class="n">inty</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">handle_to_exp</span><span class="o">.</span><span class="n">getSpectrum</span><span class="p">(</span><span class="n">rt_idx</span><span class="p">)</span><span class="o">.</span><span class="n">get_peaks</span><span class="p">()</span> 
 </span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33"></a>        <span class="k">return</span> <span class="n">mz</span><span class="p">,</span> <span class="n">inty</span>
 </span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34"></a>
-</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35"></a>    <span class="k">def</span> <span class="nf">filter_spectra</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dict_params</span><span class="p">,</span> <span class="n">filter_type</span><span class="o">=</span><span class="s2">&quot;range&quot;</span><span class="p">,</span> <span class="n">spectra_idx</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">ms_lvl</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">filter_spectra</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dict_params</span><span class="p">,</span> <span class="n">filter_type</span><span class="o">=</span><span class="s2">&quot;range&quot;</span><span class="p">,</span> <span class="n">spectra_idx</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">ms_lvl</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
 </span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;_summary_</span>
 </span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37"></a>
 </span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38"></a><span class="sd">        Args:</span>
@@ -1693,7 +1693,7 @@
 </span><span id="__span-0-110"><a id="__codelineno-0-110" name="__codelineno-0-110"></a>            <span class="n">nlargest_filter</span><span class="o">.</span><span class="n">setParameters</span><span class="p">(</span><span class="n">params</span><span class="p">)</span>
 </span><span id="__span-0-111"><a id="__codelineno-0-111" name="__codelineno-0-111"></a>            <span class="n">nlargest_filter</span><span class="o">.</span><span class="n">filterPeakSpectrum</span><span class="p">(</span><span class="n">nlargest_spectrum</span><span class="p">)</span>
 </span><span id="__span-0-112"><a id="__codelineno-0-112" name="__codelineno-0-112"></a>
-</span><span id="__span-0-113"><a id="__codelineno-0-113" name="__codelineno-0-113"></a>    <span class="k">def</span> <span class="nf">ms_noise_reduction</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">type_spectrum</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">which_spectrum</span><span class="o">=</span><span class="s2">&quot;first&quot;</span><span class="p">,</span> <span class="n">frame_length</span><span class="o">=</span><span class="mi">11</span><span class="p">,</span> <span class="n">poly_order</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">out_return</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+</span><span id="__span-0-113"><a id="__codelineno-0-113" name="__codelineno-0-113"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">ms_noise_reduction</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">type_spectrum</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">which_spectrum</span><span class="o">=</span><span class="s2">&quot;first&quot;</span><span class="p">,</span> <span class="n">frame_length</span><span class="o">=</span><span class="mi">11</span><span class="p">,</span> <span class="n">poly_order</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">out_return</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
 </span><span id="__span-0-114"><a id="__codelineno-0-114" name="__codelineno-0-114"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="__span-0-115"><a id="__codelineno-0-115" name="__codelineno-0-115"></a><span class="sd">        Applies a smoothing to the chosen mass spectrum type (1 or 2) and to the number</span>
 </span><span id="__span-0-116"><a id="__codelineno-0-116" name="__codelineno-0-116"></a>
@@ -1762,7 +1762,7 @@
 </span><span id="__span-0-179"><a id="__codelineno-0-179" name="__codelineno-0-179"></a>        <span class="k">else</span><span class="p">:</span>
 </span><span id="__span-0-180"><a id="__codelineno-0-180" name="__codelineno-0-180"></a>            <span class="k">return</span> <span class="kc">None</span>
 </span><span id="__span-0-181"><a id="__codelineno-0-181" name="__codelineno-0-181"></a>
-</span><span id="__span-0-182"><a id="__codelineno-0-182" name="__codelineno-0-182"></a>    <span class="k">def</span> <span class="nf">QC_Normalizer</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path_to_standard_sample</span><span class="p">,</span> <span class="n">tol_mz</span><span class="o">=</span><span class="mf">0.01</span><span class="p">):</span>
+</span><span id="__span-0-182"><a id="__codelineno-0-182" name="__codelineno-0-182"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">QC_Normalizer</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path_to_standard_sample</span><span class="p">,</span> <span class="n">tol_mz</span><span class="o">=</span><span class="mf">0.01</span><span class="p">):</span>
 </span><span id="__span-0-183"><a id="__codelineno-0-183" name="__codelineno-0-183"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="__span-0-184"><a id="__codelineno-0-184" name="__codelineno-0-184"></a><span class="sd">        Applies quality control (QC) normalization  </span>
 </span><span id="__span-0-185"><a id="__codelineno-0-185" name="__codelineno-0-185"></a>
@@ -1812,7 +1812,7 @@
 </span><span id="__span-0-229"><a id="__codelineno-0-229" name="__codelineno-0-229"></a>                <span class="k">continue</span>
 </span><span id="__span-0-230"><a id="__codelineno-0-230" name="__codelineno-0-230"></a>
 </span><span id="__span-0-231"><a id="__codelineno-0-231" name="__codelineno-0-231"></a>
-</span><span id="__span-0-232"><a id="__codelineno-0-232" name="__codelineno-0-232"></a>    <span class="k">def</span> <span class="nf">make_features</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mass_trace_mass_error_ppm</span><span class="o">=</span><span class="mf">10.0</span><span class="p">,</span> 
+</span><span id="__span-0-232"><a id="__codelineno-0-232" name="__codelineno-0-232"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">make_features</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mass_trace_mass_error_ppm</span><span class="o">=</span><span class="mf">10.0</span><span class="p">,</span> 
 </span><span id="__span-0-233"><a id="__codelineno-0-233" name="__codelineno-0-233"></a>                    <span class="n">mass_trace_noise_threshold_int</span><span class="o">=</span><span class="mf">0.12e04</span><span class="p">,</span> 
 </span><span id="__span-0-234"><a id="__codelineno-0-234" name="__codelineno-0-234"></a>                    <span class="n">mass_trace_chrom_peak_snr</span><span class="o">=</span><span class="mf">3.0</span><span class="p">,</span> 
 </span><span id="__span-0-235"><a id="__codelineno-0-235" name="__codelineno-0-235"></a>                    <span class="n">mass_trace_min_sample_rate</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span>
@@ -1910,7 +1910,7 @@
 </span><span id="__span-0-327"><a id="__codelineno-0-327" name="__codelineno-0-327"></a>
 </span><span id="__span-0-328"><a id="__codelineno-0-328" name="__codelineno-0-328"></a>        <span class="k">return</span> <span class="n">feature_maps</span>
 </span><span id="__span-0-329"><a id="__codelineno-0-329" name="__codelineno-0-329"></a>
-</span><span id="__span-0-330"><a id="__codelineno-0-330" name="__codelineno-0-330"></a>    <span class="k">def</span> <span class="nf">make_ms2_from_features</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> 
+</span><span id="__span-0-330"><a id="__codelineno-0-330" name="__codelineno-0-330"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">make_ms2_from_features</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> 
 </span><span id="__span-0-331"><a id="__codelineno-0-331" name="__codelineno-0-331"></a>                                <span class="n">feature_maps</span><span class="p">,</span> 
 </span><span id="__span-0-332"><a id="__codelineno-0-332" name="__codelineno-0-332"></a>                                <span class="n">mz_tolerance</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> 
 </span><span id="__span-0-333"><a id="__codelineno-0-333" name="__codelineno-0-333"></a>                                <span class="n">rt_tolerance</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span>
@@ -2108,7 +2108,7 @@
 <span class="normal"><a href="#__codelineno-0-226">226</a></span>
 <span class="normal"><a href="#__codelineno-0-227">227</a></span>
 <span class="normal"><a href="#__codelineno-0-228">228</a></span>
-<span class="normal"><a href="#__codelineno-0-229">229</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-182"><a id="__codelineno-0-182" name="__codelineno-0-182"></a><span class="k">def</span> <span class="nf">QC_Normalizer</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path_to_standard_sample</span><span class="p">,</span> <span class="n">tol_mz</span><span class="o">=</span><span class="mf">0.01</span><span class="p">):</span>
+<span class="normal"><a href="#__codelineno-0-229">229</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-182"><a id="__codelineno-0-182" name="__codelineno-0-182"></a><span class="k">def</span><span class="w"> </span><span class="nf">QC_Normalizer</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path_to_standard_sample</span><span class="p">,</span> <span class="n">tol_mz</span><span class="o">=</span><span class="mf">0.01</span><span class="p">):</span>
 </span><span id="__span-0-183"><a id="__codelineno-0-183" name="__codelineno-0-183"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="__span-0-184"><a id="__codelineno-0-184" name="__codelineno-0-184"></a><span class="sd">    Applies quality control (QC) normalization  </span>
 </span><span id="__span-0-185"><a id="__codelineno-0-185" name="__codelineno-0-185"></a>
@@ -2218,7 +2218,7 @@
 <span class="normal"><a href="#__codelineno-0-13">13</a></span>
 <span class="normal"><a href="#__codelineno-0-14">14</a></span>
 <span class="normal"><a href="#__codelineno-0-15">15</a></span>
-<span class="normal"><a href="#__codelineno-0-16">16</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">):</span>
+<span class="normal"><a href="#__codelineno-0-16">16</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">):</span>
 </span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="sd">    Initializes the pyOpenMS experiment with the .mzML file provided.</span>
 </span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10"></a>
@@ -2389,7 +2389,7 @@
 <span class="normal"><a href="#__codelineno-0-108">108</a></span>
 <span class="normal"><a href="#__codelineno-0-109">109</a></span>
 <span class="normal"><a href="#__codelineno-0-110">110</a></span>
-<span class="normal"><a href="#__codelineno-0-111">111</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35"></a><span class="k">def</span> <span class="nf">filter_spectra</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dict_params</span><span class="p">,</span> <span class="n">filter_type</span><span class="o">=</span><span class="s2">&quot;range&quot;</span><span class="p">,</span> <span class="n">spectra_idx</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">ms_lvl</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="normal"><a href="#__codelineno-0-111">111</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35"></a><span class="k">def</span><span class="w"> </span><span class="nf">filter_spectra</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dict_params</span><span class="p">,</span> <span class="n">filter_type</span><span class="o">=</span><span class="s2">&quot;range&quot;</span><span class="p">,</span> <span class="n">spectra_idx</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">ms_lvl</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
 </span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;_summary_</span>
 </span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37"></a>
 </span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38"></a><span class="sd">    Args:</span>
@@ -2570,7 +2570,7 @@
 <span class="normal"><a href="#__codelineno-0-30">30</a></span>
 <span class="normal"><a href="#__codelineno-0-31">31</a></span>
 <span class="normal"><a href="#__codelineno-0-32">32</a></span>
-<span class="normal"><a href="#__codelineno-0-33">33</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="k">def</span> <span class="nf">get_spectrum</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">rt_idx</span><span class="p">):</span>
+<span class="normal"><a href="#__codelineno-0-33">33</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="k">def</span><span class="w"> </span><span class="nf">get_spectrum</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">rt_idx</span><span class="p">):</span>
 </span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19"></a><span class="sd">    Wrapper to the pyOpenMS method. Obtains the mass spectrum corresponding to the given retention time index `rt_idx`.</span>
 </span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20"></a>
@@ -2779,7 +2779,7 @@
 <span class="normal"><a href="#__codelineno-0-177">177</a></span>
 <span class="normal"><a href="#__codelineno-0-178">178</a></span>
 <span class="normal"><a href="#__codelineno-0-179">179</a></span>
-<span class="normal"><a href="#__codelineno-0-180">180</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-113"><a id="__codelineno-0-113" name="__codelineno-0-113"></a><span class="k">def</span> <span class="nf">ms_noise_reduction</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">type_spectrum</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">which_spectrum</span><span class="o">=</span><span class="s2">&quot;first&quot;</span><span class="p">,</span> <span class="n">frame_length</span><span class="o">=</span><span class="mi">11</span><span class="p">,</span> <span class="n">poly_order</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">out_return</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+<span class="normal"><a href="#__codelineno-0-180">180</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-113"><a id="__codelineno-0-113" name="__codelineno-0-113"></a><span class="k">def</span><span class="w"> </span><span class="nf">ms_noise_reduction</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">type_spectrum</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">which_spectrum</span><span class="o">=</span><span class="s2">&quot;first&quot;</span><span class="p">,</span> <span class="n">frame_length</span><span class="o">=</span><span class="mi">11</span><span class="p">,</span> <span class="n">poly_order</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">out_return</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
 </span><span id="__span-0-114"><a id="__codelineno-0-114" name="__codelineno-0-114"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="__span-0-115"><a id="__codelineno-0-115" name="__codelineno-0-115"></a><span class="sd">    Applies a smoothing to the chosen mass spectrum type (1 or 2) and to the number</span>
 </span><span id="__span-0-116"><a id="__codelineno-0-116" name="__codelineno-0-116"></a>
@@ -2917,10 +2917,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.path", "content.footnote.tooltips", "content.code.copy", "content.code.select", "content.code.annotate"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.path", "content.footnote.tooltips", "content.code.copy", "content.code.select", "content.code.annotate"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../assets/javascripts/bundle.50899def.min.js"></script>
       
         <script src="../javascripts/katex.js"></script>
       
